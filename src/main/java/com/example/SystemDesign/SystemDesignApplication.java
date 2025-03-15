@@ -4,6 +4,7 @@ import com.example.SystemDesign.DecoratorDesignPattern.DecoratorSolutionRunner;
 import com.example.SystemDesign.ObserverDesignPattern.ObserverSolutionRunner;
 import com.example.SystemDesign.StrategyDesignPattern.Issue.StrategyIssueRunnerImpl;
 import com.example.SystemDesign.StrategyDesignPattern.Solution.StrategySolutionRunnerImpl;
+import com.example.SystemDesign.TicTacToeGame.GameSolutionRunner;
 
 
 public class SystemDesignApplication {
@@ -23,7 +24,9 @@ public class SystemDesignApplication {
 		SolutionRunner decorator = new DecoratorSolutionRunner();
 		decorator.run();
 		System.out.println("............................................................................................");
-
+		System.out.println("..........................................Tic Tac Toe Game...................................");
+		SolutionRunner solutionRunner = new GameSolutionRunner();
+		solutionRunner.run();
 	}
 
 }
