@@ -2,6 +2,7 @@ package com.example.SystemDesign;
 
 import com.example.SystemDesign.DecoratorDesignPattern.DecoratorSolutionRunner;
 import com.example.SystemDesign.ObserverDesignPattern.ObserverSolutionRunner;
+import com.example.SystemDesign.ParkingLot.ParkingLotSolutionRunner;
 import com.example.SystemDesign.StrategyDesignPattern.Issue.StrategyIssueRunnerImpl;
 import com.example.SystemDesign.StrategyDesignPattern.Solution.StrategySolutionRunnerImpl;
 import com.example.SystemDesign.TicTacToeGame.GameSolutionRunner;
@@ -25,8 +26,11 @@ public class SystemDesignApplication {
 		decorator.run();
 		System.out.println("............................................................................................");
 		System.out.println("..........................................Tic Tac Toe Game...................................");
-		SolutionRunner solutionRunner = new GameSolutionRunner();
-		solutionRunner.run();
+//		SolutionRunner solutionRunner = new GameSolutionRunner();
+//		solutionRunner.run();
+		System.out.println("..........................................Parking Lot...................................");
+		SolutionRunner parkingLotSolutionRunner = new ParkingLotSolutionRunner();
+		parkingLotSolutionRunner.run();
 	}
 
 }
