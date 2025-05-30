@@ -1,6 +1,7 @@
 package com.example.SystemDesign;
 
 import com.example.SystemDesign.CarRentalSystem.RentalSystemSolutionRunner;
+import com.example.SystemDesign.CommandDesignPattern.CommandSolutionRunner;
 import com.example.SystemDesign.DecoratorDesignPattern.DecoratorSolutionRunner;
 import com.example.SystemDesign.ObserverDesignPattern.ObserverSolutionRunner;
 import com.example.SystemDesign.ParkingLot.ParkingLotSolutionRunner;
@@ -36,6 +37,11 @@ public class SystemDesignApplication {
 		System.out.println("..........................................Rental Car.........................................");
 		SolutionRunner solutionRunner = new RentalSystemSolutionRunner();
 		solutionRunner.run();
+
+
+		System.out.println("..........................................CommandDesignPattern.....................................");
+		SolutionRunner commandDesignPattern = new CommandSolutionRunner();
+		commandDesignPattern.run();
 	}
 
 }
